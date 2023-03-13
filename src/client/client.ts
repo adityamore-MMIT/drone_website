@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-// console.log(scene.background);
+
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -25,10 +25,9 @@ let loadedObject;
 // fetch from localstorage
 
 const loader = new GLTFLoader();
-// loader.setResourcePath("/project/home/adityamore-mmit/workspace/");
+loader.setResourcePath("/project/home/adityamore-mmit/workspace/");
 // loader.setPath("/project/home/adityamore-mmit/workspace/");
 //gltf model
-// loader.crossOrigin = "anonymous";
 loader.load(
   "./drone.gltf",
   (gltf) => {
