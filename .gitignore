@@ -1,3 +1,3 @@
-drone.obj
 node_modules/
-tween.js/
+src/client/drone.obj
+package-lock.json
